@@ -181,7 +181,7 @@ Part 1: Yelp Dataset Profiling and Understanding
 		SQL code used to arrive at answer:
 		
 			SELECT stars,
-				   SUM(review_count) AS count
+				   SUM(stars) AS count
 			FROM business
 			WHERE city == 'Avon'
 			GROUP BY stars		
@@ -206,7 +206,7 @@ Part 1: Yelp Dataset Profiling and Understanding
 		SQL code used to arrive at answer:
 	
 			SELECT stars,
-				   SUM(review_count) AS count
+				   SUM(stars) AS count
 			FROM business
 			WHERE city == 'Beachwood'
 			GROUP BY stars
